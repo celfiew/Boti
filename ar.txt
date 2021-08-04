@@ -1,0 +1,64 @@
+*{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+}
+
+.container1{
+    height: 50rem;
+    background-image: url("../img/download.svg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container1 header{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    grid-column-gap: 0.5rem;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.container1 header i{
+    font-size: 2rem;
+    color: white;
+}
+.container1 header h2{
+    font-family: 'Galindo', cursive;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+    margin-bottom: 3rem;
+    font-weight: normal;
+}
+
+.container1 h1{
+    font-weight: 700;
+    font-kerning: normal;
+    font-feature-settings: 'kern', 'liga', 'clig', 'calt', 'dlig';
+    font-size: 3rem;
+    line-height: 1.2142857143;
+    letter-spacing: -0.0207142857em;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.container1 div{
+    font-weight: 400;
+    font-kerning: normal;
+    font-feature-settings: 'kern', 'liga', 'clig', 'calt', 'dlig';
+    font-size: 1.5rem;
+    color:white;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/**/
+
