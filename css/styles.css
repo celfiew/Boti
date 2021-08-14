@@ -41,11 +41,11 @@ body {
 }
 .header__video {
   width: 60rem;
-  height: 50rem;
+  height: 55rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   font-size: 3rem;
   text-align: center;
@@ -55,7 +55,7 @@ body {
   border-style: dashed;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .form {
@@ -103,7 +103,7 @@ body {
 .cards {
   display: flex;
   margin-top: 1.5rem;
-  gap: 4rem;
+  gap: 5rem;
   margin-bottom: 6rem;
   flex-wrap: wrap;
   justify-content: center;
