@@ -5,68 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>BOTI</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header__logo">
-                <h2 class="header__titulo2">Boti</h2>
-                <img src="img/logo_bot.png" alt="robot" class="header__img">
-            </div> 
-        </header>
-        <h1 class="container__titulo1">Compre y venda café con Boti</h1>
-        <div class="container_text">Te alertamos para que consigas el mejor precio en el mejor momento.</div>
-        <div class="container2">
-            <h2 class="container2__video">video</h2>
-        </div>
-        <div class="container__formulario">
-            <input class="container__formulario__email" autocomplete="email" placeholder="Número de celular" aria-describedby="MessageId_5f2c" id="SignupEmail-a566" type="email" name="signup[email]">
-            <button class="container__formulario__btn" name="button" data-event-page="free-trial" data-event-category="button" data-event-action="click-button-hero" data-event-label="signup" aria-haspopup="dialog" type="submit">Comenzar la prueba gratis</button>
-        </div>
-    </div> 
+    <header class="header">
+        <img src="img/Group 810.png" alt="logo" class="header__img">
+        <h1 class="header__title">Compre y venda café con Boti</h1>
+        <div class="header__text">Te alertamos para que consigas el mejor precio en el mejor momento.</div>
+        <div class="header__video">video</div>
+    </header>
+
+    <form class="form">
+        <input class="form__phone" autocomplete="tel" placeholder="Número de celular" id="SignupPhone" type="number" name="signup[email]">
+        <button class="form__btn" name="button" data-event-page="free-trial" data-event-category="button" data-event-action="click-button-hero" data-event-label="signup" aria-haspopup="dialog" type="submit">Comenzar la prueba gratis</button>
+    </form>
     
-        <div class="container3">
-            <div class="container3__cards">
-                <img src="img/Group 807.png" alt="gif" class="container3__gif">
-                <h4 class="container3__title1">Alerta de precios</h4>
-                <span class="container3__subtitle1">Robots que te alertan,<br>te ayudan a administrar <br> y optimizar la venta <br> de tu café, para maximizar <br> tu utilidad. </span>
-            </div>
-            <div class="container3__cards2">
-                <img src="img/Group 804.png" alt="gif2" class="container3__gif2">
-                <h4 class="container3__title2" >Compra y venta de café</h4>
-                <span class="container3__subtitle2">E-coomerce: <br> Encuentra los mejores precios <br>del mercado de café <br> mojado, verde, alta calidad <br> y tostado. </span>
-            </div>
-            <div class="container3__cards3">
-                <img src="img/Group 808.png" alt="gif3" class="container3__gif3">
-                <h4 class="container3__title3">Comunidad cafetera</h4>
-                <span class="container3__subtitle3">Indentificador de calidad, <br> defectos y enfermedades.<br> Comparte, interactua <br>  y aprende en comunidad. </span>
-            </div> 
-        </div>
-        <div class="container4">
-            <div class="container4__sponsor"><img src="img/coocentral.jpg" alt="coocentral" class="container4__sponsor__img1"></div>
-            <div class="container4__sponsor"><img src="img/fnc.png" alt="fnc" class="container4__sponsor__img2"></div>
-            <div class="container4__sponsor"><img src="img/expocafe.jpg" alt="expocafé" class="container4__sponsor__img3"></div>
-        </div>
+    <section class="cards">
+        <article class="cards__presentation">
+            <img src="img/Group 807.png" alt="gif" class="cards__gif">
+            <h4 class="cards__title">Alerta de precios</h4>
+            <span class="cards__subtitle">Robots que te alertan,<br>te ayudan a administrar <br> y optimizar la venta <br> de tu café, para <br> maximizar tu utilidad. </span>
+        </article>
+        <article class="cards__presentation">
+            <img src="img/Group 804.png" alt="gif2" class="cards__gif">
+            <h4 class="cards__title">Compra y venta de café</h4>
+            <span class="cards__subtitle">E-coomerce: <br> Encuentra los mejores  <br>precios del mercado de  <br> café mojado, verde, alta  <br>calidad y tostado. </span>
+        </article>
+        <article class="cards__presentation">
+            <img src="img/Group 808.png" alt="gif3" class="cards__gif">
+            <h4 class="cards__title">Comunidad cafetera</h4>
+            <span class="cards__subtitle">Indentificador de calidad, <br> defectos y enfermedades.<br> Comparte, interactua <br>  y aprende en comunidad. </span>
+        </article> 
+    </section>
 
-        <div class="comment">
-            <p class="comment__ceo1"> "Boti ha llegado para transformar <br> la industria cafetera en Colombia, <br> creando un comercio más justo <br> y transparente para el comercio<br>nacional e internacional. "</p>    
-            <p class="comment__ceo2"> ELON MOSK, CEO DE TESLA </p> 
-            <button class="comenzar">Comenzar</button>
-        </div>
-    
+    <section class="sponsor">
+        <img src="img/coocentral.jpg" alt="coocentral" class="sponsor__item">
+        <img src="img/fnc.png" alt="fnc" class="sponsor__item">
+        <img src="img/expocafe.jpg" alt="expocafé" class="sponsor__item"> 
+    </section>
 
-
-
-    
+        <footer class="comment">
+            <p class="comment__ceo"> "Boti ha llegado para transformar <br> la industria cafetera en Colombia, <br> creando un comercio más justo <br> y transparente para el comercio<br>nacional e internacional. "</p>    
+            <p class="comment__ceo"> ELON MOSK, CEO DE TESLA </p> 
+            <button class="comment__bottom">Comenzar</button>
+        </footer>  
 </body>
 </html>
