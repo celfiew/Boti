@@ -40,8 +40,8 @@ body {
   margin: 2rem;
 }
 .header__video {
-  width: 60rem;
-  height: 55rem;
+  width: 65rem;
+  height: 75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@ body {
   font-size: 3rem;
   text-align: center;
   width: 30rem;
-  height: 25rem;
+  height: 30rem;
   border-color: black;
   border-style: dashed;
   justify-content: center;
@@ -103,7 +103,7 @@ body {
 .cards {
   display: flex;
   margin-top: 1.5rem;
-  gap: 5rem;
+  gap: 7rem;
   margin-bottom: 6rem;
   flex-wrap: wrap;
   justify-content: center;
@@ -128,7 +128,7 @@ body {
 .sponsor {
   display: flex;
   padding-top: 1rem;
-  padding-bottom: 5.5rem;
+  padding-bottom: 4rem;
   width: 100%;
   gap: 4rem;
   flex-wrap: wrap;
@@ -139,7 +139,7 @@ body {
   flex-direction: column;
 }
 .sponsor__item {
-  width: 20rem;
+  width: 10rem;
 }
 
 .comment {
