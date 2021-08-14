@@ -134,7 +134,7 @@ body{
     padding-top: 1rem;
     padding-bottom: 4rem;
     width: 100%;
-    gap: 4rem;
+    gap: 3rem;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -142,7 +142,7 @@ body{
     border-bottom: 1px solid #d2d5d9;
     flex-direction: column;
     &__item{
-        width: 10rem;
+        width: 8rem;
     }
 }
 
