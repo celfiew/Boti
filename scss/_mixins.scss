@@ -1,0 +1,12 @@
+//propiedades dinamicas, que pueden cambiar
+
+@mixin background_principal($colorBack:#212326, $colorTexto:#ffffff){
+    background-color: $colorBack;
+    color: $colorTexto;
+}
+
+@mixin tablets{
+    @media (min-width: 420px) and (max-width: 720px){
+        @content
+    }
+}

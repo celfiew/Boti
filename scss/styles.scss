@@ -1,3 +1,6 @@
+@use 'variables' as var;
+@use 'mixins';
+    
 html{
     font-size: 62.5%;
 }
@@ -17,26 +20,31 @@ body{
     
     &__img{
         width: 15rem;
-        margin:2rem
+        margin:var.$margin-standar;
     }
     &__title{
         font-weight: 700;
         font-size: 4rem;
         line-height: 1.2142857143;
         letter-spacing: -0.0207142857em;
-        color: white;
+        color: var.$secundary;
         font-family: "Exo", sans-serif;
         text-align: center;
-        margin: 2rem;
+        margin:var.$margin-standar;
+        
+        @include mixins.tablets{
+            font-size: 6rem;
+        
+    }
     }
     &__text{
         font-weight: 400;
         font-kerning: normal;
         font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
         font-size: 2.2rem;
-        color: black;
+        color: var.$primary;
         text-align: center;
-        margin: 2rem;
+        margin:var.$margin-standar;
     }
     &__video{
         width:65rem;
@@ -50,18 +58,22 @@ body{
         text-align: center;
         width: 30rem;
         height: 30rem;
-        border-color: black;
+        border-color: var.$primary;
         border-style: dashed;
         justify-content: center;
         align-items: center;
         margin-bottom: 3rem;
-    }
+        @include mixins.tablets{
+            font-size: 100px;
+        }
+    } 
 }
 
 .form{
     display: flex;
-    margin: 2rem;
+    margin:var.$margin-standar;
     flex-direction: column;
+
 
     &__phone{
         display: inline-block;
@@ -69,21 +81,21 @@ body{
         width: 28rem;
         margin: 0 0 1rem;
         padding: 1em 0.9375em;
-        color: #212326;
         font-size: 1.5rem;
         box-shadow: 0 0 0 1px #6b7177;
         border: 1px solid transparent;
         border-radius: 4px;
-        background-color: #ffffff;
         transition: padding 150ms;
         appearance: none;
         align-self: center;
+        @include mixins.background_principal(var.$secundary,var.$primary);
+        @include mixins.tablets{
+            width: 38rem;
+        }
     }
 
     &__btn{
         box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
-        background-color: #212326;
-        color: #ffffff;
         display: inline-block;
         padding: 0.9rem 4rem;
         border-radius: 4px;
@@ -100,6 +112,10 @@ body{
         border-color: transparent;
         margin-bottom: 3rem;
         align-self: center;
+        @include mixins.background_principal();
+        @include mixins.tablets{
+            width: 40rem;
+        }
     }
 }
 
@@ -120,13 +136,18 @@ body{
     }
     &__gif{
         width: 20rem;
-       
     }
     &__title{
         font-size: 2.5rem;
+        @include mixins.tablets{
+            font-size: 3rem;
+        }
     }
     &__subtitle{
         font-size: 2.2rem;
+        @include mixins.tablets{
+            font-size: 2.5rem;
+        }
     }
 }
 
@@ -139,11 +160,14 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid #d2d5d9;
-    border-bottom: 1px solid #d2d5d9;
+    border-top: 1px solid var.$secundary;
+    border-bottom: 1px solid var.$secundary;
     flex-direction: column;
     &__item{
-        width: 8rem;
+        width: 9rem;
+        @include mixins.tablets{
+            width: 14rem;
+        }
     }
 }
 
@@ -154,21 +178,25 @@ body{
     &__ceo{
         font-size: 2rem;
         margin: 3rem;
+        @include mixins.tablets{
+            font-size: 2.3rem;
+        }
     }
     &__bottom{
         margin-bottom: 2rem;
         margin-top: 2rem;
-        background-color: #008060;
+        background-color: var.$tertiary;
         width: 15rem;
         height: 4.5rem;
         cursor: pointer;
         text-decoration: none;
-        color: white;
+        color: var.$secundary;
         font-size: 1.8rem;
         text-align: center;
         border-style: none;
-
+        @include mixins.tablets{
+            width: 17rem;
+            height: 5rem;
+        }
     }
 }
-
-
