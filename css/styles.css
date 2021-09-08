@@ -35,6 +35,11 @@ body {
     font-size: 6rem;
   }
 }
+@media (min-width: 721px) {
+  .header__title {
+    font-size: 6rem;
+  }
+}
 .header__text {
   font-weight: 400;
   font-kerning: normal;
@@ -44,9 +49,12 @@ body {
   text-align: center;
   margin: 2rem;
 }
+@media (min-width: 721px) {
+  .header__text {
+    font-size: 2.5rem;
+  }
+}
 .header__video {
-  width: 65rem;
-  height: 75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +72,13 @@ body {
 }
 @media (min-width: 420px) and (max-width: 720px) {
   .header__video {
-    font-size: 100px;
+    width: 40rem;
+  }
+}
+@media (min-width: 721px) {
+  .header__video {
+    width: 55rem;
+    height: 35rem;
   }
 }
 
@@ -72,6 +86,11 @@ body {
   display: flex;
   margin: 2rem;
   flex-direction: column;
+}
+@media (min-width: 721px) {
+  .form {
+    padding-top: 4rem;
+  }
 }
 .form__phone {
   display: inline-block;
@@ -92,6 +111,12 @@ body {
 @media (min-width: 420px) and (max-width: 720px) {
   .form__phone {
     width: 38rem;
+  }
+}
+@media (min-width: 721px) {
+  .form__phone {
+    width: 43rem;
+    height: 2.5rem;
   }
 }
 .form__btn {
@@ -120,6 +145,12 @@ body {
     width: 40rem;
   }
 }
+@media (min-width: 721px) {
+  .form__btn {
+    width: 43rem;
+    padding: 1.6rem 4rem;
+  }
+}
 
 .cards {
   display: flex;
@@ -131,10 +162,22 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 721px) {
+  .cards {
+    flex-direction: row;
+    margin-bottom: 15rem;
+    margin-top: 10rem;
+  }
+}
 .cards__presentation {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 721px) {
+  .cards__presentation--margin {
+    margin-bottom: 2.5rem;
+  }
 }
 .cards__gif {
   width: 20rem;
@@ -155,6 +198,11 @@ body {
     font-size: 2.5rem;
   }
 }
+@media (min-width: 721px) {
+  .cards__subtitle {
+    font-size: 2rem;
+  }
+}
 
 .sponsor {
   display: flex;
@@ -169,6 +217,14 @@ body {
   border-bottom: 1px solid #ffffff;
   flex-direction: column;
 }
+@media (min-width: 721px) {
+  .sponsor {
+    padding-top: 3rem;
+    flex-direction: row;
+    border-color: rgba(0, 0, 0, 0.171);
+    gap: 6rem;
+  }
+}
 .sponsor__item {
   width: 9rem;
 }
@@ -177,11 +233,22 @@ body {
     width: 14rem;
   }
 }
+@media (min-width: 721px) {
+  .sponsor__item {
+    width: 18rem;
+    flex-direction: row;
+  }
+}
 
 .comment {
   margin-top: 5rem;
   text-align: center;
   margin-bottom: 2rem;
+}
+@media (min-width: 721px) {
+  .comment {
+    margin-top: 10rem;
+  }
 }
 .comment__ceo {
   font-size: 2rem;
@@ -209,6 +276,13 @@ body {
   .comment__bottom {
     width: 17rem;
     height: 5rem;
+  }
+}
+@media (min-width: 721px) {
+  .comment__bottom {
+    margin-top: 3rem;
+    width: 20rem;
+    height: 6rem;
   }
 }
 

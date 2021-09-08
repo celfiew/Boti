@@ -7,6 +7,12 @@
 
 @mixin tablets{
     @media (min-width: 420px) and (max-width: 720px){
-        @content
+        @content;
+    }
+}
+
+@mixin laptop{
+    @media (min-width: 721px){
+        @content;
     }
 }

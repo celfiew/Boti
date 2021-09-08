@@ -34,8 +34,12 @@ body{
         
         @include mixins.tablets{
             font-size: 6rem;
-        
-    }
+        }
+
+        @include mixins.laptop{
+            font-size: 6rem;
+        }
+    
     }
     &__text{
         font-weight: 400;
@@ -45,10 +49,11 @@ body{
         color: var.$primary;
         text-align: center;
         margin:var.$margin-standar;
+        @include mixins.laptop{
+            font-size: 2.5rem;
+        }
     }
     &__video{
-        width:65rem;
-        height:75rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -64,7 +69,11 @@ body{
         align-items: center;
         margin-bottom: 3rem;
         @include mixins.tablets{
-            font-size: 100px;
+            width: 40rem;
+        }
+        @include mixins.laptop{
+            width: 55rem;
+            height: 35rem;
         }
     } 
 }
@@ -74,6 +83,9 @@ body{
     margin:var.$margin-standar;
     flex-direction: column;
 
+    @include mixins.laptop{
+       padding-top: 4rem;
+    }
 
     &__phone{
         display: inline-block;
@@ -91,6 +103,10 @@ body{
         @include mixins.background_principal(var.$secundary,var.$primary);
         @include mixins.tablets{
             width: 38rem;
+        }
+        @include mixins.laptop{
+            width: 43rem;
+            height: 2.5rem;
         }
     }
 
@@ -116,6 +132,10 @@ body{
         @include mixins.tablets{
             width: 40rem;
         }
+        @include mixins.laptop{
+            width: 43rem;
+            padding: 1.6rem 4rem;
+        }
     }
 }
 
@@ -128,12 +148,26 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
+    @include mixins.laptop{
+        flex-direction: row;
+        margin-bottom: 15rem;
+        margin-top: 10rem;
+    }
+    
+    
 
     &__presentation{
         display: flex;
         flex-direction: column;
         align-items: center;
+        &--margin 
+        {@include mixins.laptop{
+            margin-bottom: 2.5rem
+        }
     }
+    }
+
     &__gif{
         width: 20rem;
     }
@@ -147,6 +181,9 @@ body{
         font-size: 2.2rem;
         @include mixins.tablets{
             font-size: 2.5rem;
+        }
+        @include mixins.laptop{
+            font-size: 2rem;
         }
     }
 }
@@ -163,10 +200,21 @@ body{
     border-top: 1px solid var.$secundary;
     border-bottom: 1px solid var.$secundary;
     flex-direction: column;
+    
+        @include mixins.laptop{
+            padding-top: 3rem;
+            flex-direction: row;
+            border-color:rgba(0, 0, 0, 0.171);
+            gap: 6rem
+        }
     &__item{
         width: 9rem;
         @include mixins.tablets{
             width: 14rem;
+        }
+        @include mixins.laptop{
+            width: 18rem;
+            flex-direction: row;
         }
     }
 }
@@ -175,6 +223,9 @@ body{
     margin-top: 5rem;
     text-align: center;
     margin-bottom: 2rem;
+    @include mixins.laptop{
+        margin-top: 10rem;
+    }
     &__ceo{
         font-size: 2rem;
         margin: 3rem;
@@ -188,7 +239,7 @@ body{
         background-color: var.$tertiary;
         width: 15rem;
         height: 4.5rem;
-        cursor: pointer;
+        cursor: pointer;        
         text-decoration: none;
         color: var.$secundary;
         font-size: 1.8rem;
@@ -197,6 +248,11 @@ body{
         @include mixins.tablets{
             width: 17rem;
             height: 5rem;
+        }
+        @include mixins.laptop{
+            margin-top: 3rem;
+            width: 20rem;
+            height: 6rem;
         }
     }
 }
