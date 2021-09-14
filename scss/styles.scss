@@ -87,29 +87,6 @@ body{
        padding-top: 4rem;
     }
 
-    &__phone{
-        display: inline-block;
-        height: 1.5rem;
-        width: 28rem;
-        margin: 0 0 1rem;
-        padding: 1em 0.9375em;
-        font-size: 1.5rem;
-        box-shadow: 0 0 0 1px #6b7177;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        transition: padding 150ms;
-        appearance: none;
-        align-self: center;
-        @include mixins.background_principal(var.$secundary,var.$primary);
-        @include mixins.tablets{
-            width: 38rem;
-        }
-        @include mixins.laptop{
-            width: 43rem;
-            height: 2.5rem;
-        }
-    }
-
     &__btn{
         box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
         display: inline-block;
@@ -136,6 +113,9 @@ body{
             width: 43rem;
             padding: 1.6rem 4rem;
         }
+        &:hover{
+            background-color: var.$fourth;
+        }
     }
 }
 
@@ -155,22 +135,20 @@ body{
         margin-top: 10rem;
     }
     
-    
-
     &__presentation{
         display: flex;
         flex-direction: column;
         align-items: center;
-        &--margin 
-        {@include mixins.laptop{
+        @include mixins.laptop{
             margin-bottom: 2.5rem
-        }
+
     }
     }
 
     &__gif{
         width: 20rem;
     }
+    
     &__title{
         font-size: 2.5rem;
         @include mixins.tablets{
@@ -245,6 +223,7 @@ body{
         font-size: 1.8rem;
         text-align: center;
         border-style: none;
+        border-radius: 0.6rem;
         @include mixins.tablets{
             width: 17rem;
             height: 5rem;
@@ -253,6 +232,9 @@ body{
             margin-top: 3rem;
             width: 20rem;
             height: 6rem;
+        }
+        &:hover{
+            background-color:var.$fourth
         }
     }
 }

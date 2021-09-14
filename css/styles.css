@@ -92,33 +92,6 @@ body {
     padding-top: 4rem;
   }
 }
-.form__phone {
-  display: inline-block;
-  height: 1.5rem;
-  width: 28rem;
-  margin: 0 0 1rem;
-  padding: 1em 0.9375em;
-  font-size: 1.5rem;
-  box-shadow: 0 0 0 1px #6b7177;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  transition: padding 150ms;
-  appearance: none;
-  align-self: center;
-  background-color: #ffffff;
-  color: #212326;
-}
-@media (min-width: 420px) and (max-width: 720px) {
-  .form__phone {
-    width: 38rem;
-  }
-}
-@media (min-width: 721px) {
-  .form__phone {
-    width: 43rem;
-    height: 2.5rem;
-  }
-}
 .form__btn {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   display: inline-block;
@@ -151,6 +124,9 @@ body {
     padding: 1.6rem 4rem;
   }
 }
+.form__btn:hover {
+  background-color: orange;
+}
 
 .cards {
   display: flex;
@@ -175,7 +151,7 @@ body {
   align-items: center;
 }
 @media (min-width: 721px) {
-  .cards__presentation--margin {
+  .cards__presentation {
     margin-bottom: 2.5rem;
   }
 }
@@ -271,6 +247,7 @@ body {
   font-size: 1.8rem;
   text-align: center;
   border-style: none;
+  border-radius: 0.6rem;
 }
 @media (min-width: 420px) and (max-width: 720px) {
   .comment__bottom {
@@ -284,6 +261,9 @@ body {
     width: 20rem;
     height: 6rem;
   }
+}
+.comment__bottom:hover {
+  background-color: orange;
 }
 
 /*# sourceMappingURL=styles.css.map */
