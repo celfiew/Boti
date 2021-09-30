@@ -1,0 +1,114 @@
+@use 'variables' as var;
+@use 'mixins';
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title-precios{
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 50px 0;
+}
+
+.table-module{
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    
+
+&__row{
+    border-bottom: 1px solid #ececec;
+    }
+
+&__rows{
+    position: relative;
+    border-right: 1px solid #ececec;
+    padding: 1px 20px;
+    
+
+    &--back-color{
+        border-right: 1px solid #ececec;
+        padding: 1px 20px;
+        background-color: #f9f9f9;
+        width: 40%;
+    }
+}
+&__recommended{
+    display: none;
+    color: inherit;
+    font-family: Grand Hotel,cursive;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 5px;
+    
+    
+}
+
+&__table_head{
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: var.$tertiary;
+    margin: 0 0 10px;
+    
+    
+}
+&__row-icon{
+    border-right: 1px solid #ececec;
+    padding: 1px 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var.$tertiary;
+    
+&--color{
+    color: black;
+    border-right: 1px solid #ececec;
+    padding: 1px 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: inherit;
+    }
+}
+&__button_wrapp{
+    text-transform: uppercase;
+    color: var.$fourth  ;
+    background: transparent;
+    padding: 10px 26px;
+    font-size: 2rem;
+    line-height: 1.3333333;
+    border-radius: 5px;
+    border: 2px solid;
+    transition: .3s;
+    position: relative;
+    text-align: center;
+ 
+    
+    &:hover{
+        background-color:var.$fourth;
+        color: white;  
+    }
+}
+}
+
+.content-end{
+    margin: 0;
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #767c7e;
+    padding: 10rem
+}

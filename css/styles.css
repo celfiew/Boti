@@ -1,3 +1,102 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.title-precios {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 50px 0;
+}
+
+.table-module {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.table-module__row {
+  border-bottom: 1px solid #ececec;
+}
+.table-module__rows {
+  position: relative;
+  border-right: 1px solid #ececec;
+  padding: 1px 20px;
+}
+.table-module__rows--back-color {
+  border-right: 1px solid #ececec;
+  padding: 1px 20px;
+  background-color: #f9f9f9;
+  width: 40%;
+}
+.table-module__recommended {
+  display: none;
+  color: inherit;
+  font-family: Grand Hotel, cursive;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.table-module__table_head {
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #008060;
+  margin: 0 0 10px;
+}
+.table-module__row-icon {
+  border-right: 1px solid #ececec;
+  padding: 1px 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #008060;
+}
+.table-module__row-icon--color {
+  color: black;
+  border-right: 1px solid #ececec;
+  padding: 1px 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: inherit;
+}
+.table-module__button_wrapp {
+  text-transform: uppercase;
+  color: orange;
+  background: transparent;
+  padding: 10px 26px;
+  font-size: 2rem;
+  line-height: 1.3333333;
+  border-radius: 5px;
+  border: 2px solid;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+}
+.table-module__button_wrapp:hover {
+  background-color: orange;
+  color: white;
+}
+
+.content-end {
+  margin: 0;
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #767c7e;
+  padding: 10rem;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -82,17 +181,18 @@ body {
   }
 }
 
-.form {
+.allButton {
   display: flex;
   margin: 2rem;
   flex-direction: column;
 }
 @media (min-width: 721px) {
-  .form {
+  .allButton {
     padding-top: 4rem;
   }
 }
-.form__btn {
+.allButton__click {
+  text-decoration: none;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   display: inline-block;
   padding: 0.9rem 4rem;
@@ -114,17 +214,31 @@ body {
   color: #ffffff;
 }
 @media (min-width: 420px) and (max-width: 720px) {
-  .form__btn {
+  .allButton__click {
     width: 40rem;
   }
 }
 @media (min-width: 721px) {
-  .form__btn {
+  .allButton__click {
     width: 43rem;
     padding: 1.6rem 4rem;
   }
 }
-.form__btn:hover {
+.allButton__click:hover {
+  background-color: orange;
+}
+.allButton__click--green {
+  margin: 0px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: #008060;
+  padding: 1.5rem 5rem;
+  border-radius: 0.7rem;
+}
+.allButton__click--green:hover {
   background-color: orange;
 }
 
@@ -149,6 +263,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.cards__presentation--frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4.8rem;
 }
 @media (min-width: 721px) {
   .cards__presentation {
@@ -217,9 +337,12 @@ body {
 }
 
 .comment {
+  display: flex;
   margin-top: 5rem;
   text-align: center;
   margin-bottom: 2rem;
+  align-items: center;
+  flex-direction: column;
 }
 @media (min-width: 721px) {
   .comment {
@@ -228,42 +351,12 @@ body {
 }
 .comment__ceo {
   font-size: 2rem;
-  margin: 3rem;
+  margin: 1.3rem;
 }
 @media (min-width: 420px) and (max-width: 720px) {
   .comment__ceo {
     font-size: 2.3rem;
   }
-}
-.comment__bottom {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  background-color: #008060;
-  width: 15rem;
-  height: 4.5rem;
-  cursor: pointer;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.8rem;
-  text-align: center;
-  border-style: none;
-  border-radius: 0.6rem;
-}
-@media (min-width: 420px) and (max-width: 720px) {
-  .comment__bottom {
-    width: 17rem;
-    height: 5rem;
-  }
-}
-@media (min-width: 721px) {
-  .comment__bottom {
-    margin-top: 3rem;
-    width: 20rem;
-    height: 6rem;
-  }
-}
-.comment__bottom:hover {
-  background-color: orange;
 }
 
 /*# sourceMappingURL=styles.css.map */

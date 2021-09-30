@@ -1,5 +1,6 @@
 @use 'variables' as var;
 @use 'mixins';
+@use 'precios';
     
 html{
     font-size: 62.5%;
@@ -77,17 +78,15 @@ body{
         }
     } 
 }
-
-.form{
+.allButton{
     display: flex;
     margin:var.$margin-standar;
     flex-direction: column;
-
     @include mixins.laptop{
-       padding-top: 4rem;
-    }
-
-    &__btn{
+        padding-top: 4rem;
+     }
+     &__click{
+        text-decoration: none;
         box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
         display: inline-block;
         padding: 0.9rem 4rem;
@@ -116,8 +115,23 @@ body{
         &:hover{
             background-color: var.$fourth;
         }
+        &--green{
+            margin: 0px;
+            text-decoration: none;
+            color: var.$secundary;
+            font-size: 1.8rem;
+            text-align: center;
+            cursor: pointer;
+            background-color: var.$tertiary;
+            padding: 1.5rem 5rem;
+            border-radius: 0.7rem;
+            &:hover{
+                background-color: var.$fourth;
+            }
+            }
+     }
     }
-}
+
 
 .cards{
     display: flex;
@@ -139,14 +153,20 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        &--frame{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 4.8rem;
+        }
         @include mixins.laptop{
             margin-bottom: 2.5rem
-
+           
     }
     }
 
     &__gif{
-        width: 20rem;
+        width: 20rem;   
     }
     
     &__title{
@@ -198,43 +218,24 @@ body{
 }
 
 .comment{
+    display: flex;
     margin-top: 5rem;
     text-align: center;
     margin-bottom: 2rem;
+    align-items: center;
+    flex-direction: column;
     @include mixins.laptop{
         margin-top: 10rem;
     }
     &__ceo{
         font-size: 2rem;
-        margin: 3rem;
+        margin: 1.3rem;
         @include mixins.tablets{
             font-size: 2.3rem;
         }
     }
-    &__bottom{
-        margin-bottom: 2rem;
-        margin-top: 2rem;
-        background-color: var.$tertiary;
-        width: 15rem;
-        height: 4.5rem;
-        cursor: pointer;        
-        text-decoration: none;
-        color: var.$secundary;
-        font-size: 1.8rem;
-        text-align: center;
-        border-style: none;
-        border-radius: 0.6rem;
-        @include mixins.tablets{
-            width: 17rem;
-            height: 5rem;
-        }
-        @include mixins.laptop{
-            margin-top: 3rem;
-            width: 20rem;
-            height: 6rem;
-        }
-        &:hover{
-            background-color:var.$fourth
-        }
-    }
 }
+        
+
+   
+
