@@ -11,4 +11,4 @@
 >The first step about this project will be to test the market's interest, so I am going to do it throw a MVP.
 
 
-![imagenes](https://github.com/celfiew/Boti/blob/main/img/Group%20804.png)
+![imagenes](https://github.com/celfiew/Boti/blob/main/img/celfiew.github.io_Boti_.png)
